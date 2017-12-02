@@ -34,7 +34,16 @@ namespace BMAutotests.AppLogic
             return JsonConvert.DeserializeObject<List<Meeting>>(
                 File.ReadAllText(getTempPath() + @"\data\meeting\meetings.json"));
         }
-
+        public static IEnumerable<EmailMessage> emails()
+        {
+            return JsonConvert.DeserializeObject<List<EmailMessage>>(
+                File.ReadAllText(getTempPath() + @"\data\email\emails.json"));
+        }
+        public static IEnumerable<EmailMessage> welcomeemails()
+        {
+            return JsonConvert.DeserializeObject<List<EmailMessage>>(
+                File.ReadAllText(getTempPath() + @"\data\email\welcomeemails.json"));
+        }
 
 
         /*
@@ -257,16 +266,8 @@ namespace BMAutotests.AppLogic
             return JsonConvert.DeserializeObject<IEnumerable<Profile>>(
                 File.ReadAllText(getTempPath() + @"\data\profile\currentpasswordincorrect.json"));
         }
-        public static IEnumerable<EmailMessage> emails()
-        {
-            return JsonConvert.DeserializeObject<List<EmailMessage>>(
-                File.ReadAllText(getTempPath() + @"\data\email\emails.json"));
-        }
-        public static IEnumerable<EmailMessage> welcomeemails()
-        {
-            return JsonConvert.DeserializeObject<List<EmailMessage>>(
-                File.ReadAllText(getTempPath() + @"\data\email\welcomeemails.json"));
-        }
+        
+        
         public static IEnumerable<Task> taskforemail()
         {
             return JsonConvert.DeserializeObject<List<Task>>(

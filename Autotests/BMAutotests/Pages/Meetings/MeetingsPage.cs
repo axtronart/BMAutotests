@@ -36,9 +36,9 @@ namespace BMAutotests.Pages
 
         public override void ensurePageLoaded()
         {
-            waitSecond();
+            pageManager.driver.SwitchTo().Frame(pageManager.driver.FindElement(By.ClassName("modules_base_pages_boardmaps-frame")));
             var wait = new WebDriverWait(pageManager.driver, TimeSpan.FromSeconds(PageManager.WAITTIMEFORFINDELEMENT));
-            wait.Until(d => d.FindElement(By.XPath("/html/body/div[1]/div/div[1]")));
+            wait.Until(d => d.FindElement(By.Id("meeting-list")));
         }
 
         public void openCaseMenu()

@@ -17,7 +17,7 @@ namespace BMAutotests.Pages
 
         private IWebElement PopupOverlay;
 
-        [FindsBy(How = How.XPath, Using = "//form//div[@class='l-right']/button")]
+        [FindsBy(How = How.XPath, Using = "//a[contains(@class,'btn-save')]")]
         private IWebElement saveButton;
 
         //общих элементов для поиска внутри таблицы пока нет
@@ -37,8 +37,8 @@ namespace BMAutotests.Pages
         public override void ensurePageLoaded()
         {
             var wait = new WebDriverWait(pageManager.driver, TimeSpan.FromSeconds(PageManager.WAITTIMEFORFINDELEMENT));
-            wait.Until(d => d.FindElement(By.XPath("//*[contains(@class,'b-popup-header')]")));
-            PopupOverlay = pageManager.driver.FindElement(By.XPath("//div[contains(@class,'b-popup-overlay')]"));
+            wait.Until(d => d.FindElement(By.XPath("//*[contains(@class,'popup-holder rel')]")));
+            PopupOverlay = pageManager.driver.FindElement(By.XPath("//*[contains(@class,'popup-holder rel')]"));
             //Ожидание пока попап остановится
             waitForFixPosition(PopupOverlay);
             waitSecond(1000);

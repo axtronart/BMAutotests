@@ -27,7 +27,7 @@ namespace BMAutotests.Pages
             browsername = capabilities.BrowserName;
             versionname = capabilities.Version;
             // driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(PageManager.WAITTIMEFORFINDELEMENT));
-            driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(PageManager.WAITPAGELOADTIME));
+           // driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(PageManager.WAITPAGELOADTIME));
             driver.Manage().Window.Size = new System.Drawing.Size(DimensionX, DimensionY);
             //driver.Manage().Window.Size = new System.Drawing.Size(1920, 1080);
             driver.Manage().Window.Maximize();
@@ -40,8 +40,9 @@ namespace BMAutotests.Pages
 
             mainMenu = InitElements(new MainMenu(this));
             meetingsPage = InitElements(new MeetingsPage(this));
-            meetingsPage = InitElements(new MeetingsPage(this));
+            meetingPopup = InitElements(new MeetingPopup(this));
             loginPage = InitElements(new LoginPage(this));
+
             contextMenu = InitElements(new ContextMenu(this));
             headerMenu = InitElements(new HeaderMenu(this));
             adminMenu = InitElements(new AdminMenu(this));

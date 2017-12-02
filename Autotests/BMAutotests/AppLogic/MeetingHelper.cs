@@ -30,7 +30,7 @@ namespace BMAutotests.AppLogic
 
             pages.popupPage.ensurePageLoaded();
             pages.meetingPopup.setMeetingType(meeting.Type);
-            pages.meetingPopup.setMeetingName(meeting.Number);
+            pages.meetingPopup.setMeetingNumber(meeting.Number);
             pages.popupPage.saveClick();
         }
 

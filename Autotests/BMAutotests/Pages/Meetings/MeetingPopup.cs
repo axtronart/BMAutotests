@@ -7,8 +7,8 @@ namespace BMAutotests.Pages
 {
     public class MeetingPopup : PopupPage
     {
-        [FindsBy(How = How.XPath, Using = "//div[@name='projectGroupName']/input")]
-        private IWebElement nameProjectField;
+        [FindsBy(How = How.Id, Using = "number")]
+        private IWebElement numberField;
 
         [FindsBy(How = How.XPath, Using = "//div[@name='projectFolder']/input")]
         private IWebElement nameFolderField;
@@ -33,14 +33,14 @@ namespace BMAutotests.Pages
             setTextField(caseNameField, caseName);
         }
 
-        internal void setMeetingType(string p)
+        internal void setMeetingType(string Type)
         {
-            throw new NotImplementedException();
+
         }
 
-        internal void setMeetingName(string p)
+        internal void setMeetingNumber(string Number)
         {
-            throw new NotImplementedException();
+            setTextField(numberField, Number);
         }
     }
 }
