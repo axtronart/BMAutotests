@@ -80,5 +80,3 @@ CaseDotStarCloud/rcf
 /CaseMap/CaseMap.Modules.Participants.Site/LocalDeploy
 /_Destination
 *.exe
-.nuget/NuGet.targets
-Autotests/BMTests/Properties/AssemblyInfo.cs

@@ -112,7 +112,6 @@
     <Compile Include="Pages\Menues\AdminMenu.cs" />
     <Compile Include="Pages\Menues\HeaderMenu.cs" />
     <Compile Include="Pages\Menues\ExternalMenu.cs" />
-    <Compile Include="Model\Decision.cs" />
     <Compile Include="Model\Menu.cs" />
     <Compile Include="Model\SimpleString.cs" />
     <Compile Include="Model\User.cs" />

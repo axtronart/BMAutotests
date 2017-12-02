@@ -35,11 +35,7 @@ namespace BMAutotests.AppLogic
                File.ReadAllText(getTempPath() + @"\data\knowledgebase\directoriesname.json"));
 
         }
-        public static IEnumerable<Decision> decisions()
-        {
-            return JsonConvert.DeserializeObject<List<Decision>>(
-                File.ReadAllText(getTempPath() + @"\data\knowledgebase\decision.json"));
-        }
+        
         public static IEnumerable<Project> projects()
         {
             return JsonConvert.DeserializeObject<List<Project>>(
