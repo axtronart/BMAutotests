@@ -13,5 +13,10 @@
         "login": "ceo",
         "password": "qqq111",
         "role": "Участник КО"
+    },
+    {
+        "login": "cs",
+        "password": "qqq111",
+        "role": "Секретарь"
     }
 ]

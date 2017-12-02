@@ -30,7 +30,7 @@ namespace BMAutotests.Pages
             driver.Manage().Timeouts().SetPageLoadTimeout(TimeSpan.FromSeconds(PageManager.WAITPAGELOADTIME));
             driver.Manage().Window.Size = new System.Drawing.Size(DimensionX, DimensionY);
             //driver.Manage().Window.Size = new System.Drawing.Size(1920, 1080);
-            //driver.Manage().Window.Maximize();
+            driver.Manage().Window.Maximize();
 
             if (!driver.Url.StartsWith(baseUrl))
             {
@@ -38,7 +38,9 @@ namespace BMAutotests.Pages
             }
             this.baseUrl = baseUrl;
 
-            extMenu = InitElements(new ExternalMenu(this));
+            mainMenu = InitElements(new MainMenu(this));
+            meetingsPage = InitElements(new MeetingsPage(this));
+            meetingsPage = InitElements(new MeetingsPage(this));
             loginPage = InitElements(new LoginPage(this));
             contextMenu = InitElements(new ContextMenu(this));
             headerMenu = InitElements(new HeaderMenu(this));
@@ -62,7 +64,9 @@ namespace BMAutotests.Pages
         }
 
         public HeaderPage headerPage { get; set; }
-        public ExternalMenu extMenu { get; set; }
+        public MainMenu mainMenu { get; set; }
+        public MeetingsPage meetingsPage { get; set; }
+        public MeetingPopup meetingPopup { get; set; }
         public AdminMenu adminMenu { get; set; }
         public MiddleMenu middleMenu { get; set; }
         public LoginPage loginPage { get; set; }

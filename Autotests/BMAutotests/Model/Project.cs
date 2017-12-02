@@ -7,7 +7,7 @@ namespace BMAutotests.Model
         public string Directories;
         public string Name;
         public string Description;
-        public List<Case> СasesList = new List<Case>();
+        public List<Meeting> СasesList = new List<Meeting>();
         public override string ToString()
         {
             return "Название = " + Name + ", описание = " + Directories;

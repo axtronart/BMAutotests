@@ -6,7 +6,7 @@ using System;
 
 namespace BMAutotests.Menues
 {
-    public class ContextMenu : ExternalMenu
+    public class ContextMenu : MainMenu
     {
         [FindsBy(How = How.ClassName, Using = "b-common_context_menu-content")]
         private IWebElement Menu;

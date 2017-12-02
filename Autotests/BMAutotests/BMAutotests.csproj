@@ -79,13 +79,14 @@
     <Compile Include="AppLogic\AppManager.cs" />
     <Compile Include="AppLogic\EmailHelper.cs" />
     <Compile Include="AppLogic\FileHelper.cs" />
+    <Compile Include="AppLogic\MeetingHelper.cs" />
     <Compile Include="AppLogic\UserHelper.cs" />
     <Compile Include="Model\Activity.cs" />
     <Compile Include="Model\Billing\Inovice.cs" />
     <Compile Include="Model\Billing\PaymentRecord.cs" />
     <Compile Include="Model\Billing\Expense.cs" />
     <Compile Include="Model\EmailMessage.cs" />
-    <Compile Include="Model\Case.cs" />
+    <Compile Include="Model\Meeting.cs" />
     <Compile Include="Model\Automation.cs" />
     <Compile Include="Model\Participants\Participant.cs" />
     <Compile Include="Model\Profile.cs" />
@@ -106,12 +107,14 @@
     <Compile Include="Pages\EmailsPage.cs" />
     <Compile Include="Model\Task.cs" />
     <Compile Include="Pages\Login\RemindPasswordPage.cs" />
+    <Compile Include="Pages\Meetings\MeetingsPage.cs" />
+    <Compile Include="Pages\Meetings\MeetingPopup.cs" />
     <Compile Include="Pages\Menues\IconsMenu.cs" />
     <Compile Include="Pages\Menues\MiddleMenu.cs" />
     <Compile Include="Pages\Menues\BaseMenu.cs" />
     <Compile Include="Pages\Menues\AdminMenu.cs" />
     <Compile Include="Pages\Menues\HeaderMenu.cs" />
-    <Compile Include="Pages\Menues\ExternalMenu.cs" />
+    <Compile Include="Pages\Menues\MainMenu.cs" />
     <Compile Include="Model\Menu.cs" />
     <Compile Include="Model\SimpleString.cs" />
     <Compile Include="Model\User.cs" />
@@ -135,6 +138,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="data\login\loginincorrect.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\meeting\meetings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="data\profile\currentpasswordincorrect.json">

@@ -85,6 +85,7 @@
     <Compile Include="Email\EmailTests.cs" />
     <Compile Include="Login\LoginNegativePageTests.cs" />
     <Compile Include="Login\LoginPositivePageTests.cs" />
+    <Compile Include="Meeting\CreateMeetingsTests.cs" />
     <Compile Include="TestBase.cs" />
     <Compile Include="InternalPageTests.cs" />
     <Compile Include="Finalizer.cs" />

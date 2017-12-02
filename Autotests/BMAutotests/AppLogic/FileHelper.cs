@@ -29,6 +29,15 @@ namespace BMAutotests.AppLogic
             return JsonConvert.DeserializeObject<List<User>>(
                 File.ReadAllText(getTempPath() + @"\data\login\logincorrect.json"));
         }
+        public static IEnumerable<Meeting> meetings()
+        {
+            return JsonConvert.DeserializeObject<List<Meeting>>(
+                File.ReadAllText(getTempPath() + @"\data\meeting\meetings.json"));
+        }
+
+
+
+        /*
         public static IEnumerable<SimpleString> directoriesname()
         {
             return JsonConvert.DeserializeObject<List<SimpleString>>(
@@ -145,9 +154,9 @@ namespace BMAutotests.AppLogic
                 File.ReadAllText(getTempPath() + @"\data\automation\automation.json"));
         }
 
-        public static IEnumerable<Case> cases()
+        public static IEnumerable<Meeting> cases()
         {
-            return JsonConvert.DeserializeObject<List<Case>>(
+            return JsonConvert.DeserializeObject<List<Meeting>>(
                 File.ReadAllText(getTempPath() + @"\data\case\cases.json"));
         }
 
@@ -223,9 +232,9 @@ namespace BMAutotests.AppLogic
                 File.ReadAllText(getTempPath() + @"\data\report\reportsEdit.json"));
         }
 
-        public static IEnumerable<Case> casesArchive()
+        public static IEnumerable<Meeting> casesArchive()
         {
-            return JsonConvert.DeserializeObject<List<Case>>(
+            return JsonConvert.DeserializeObject<List<Meeting>>(
                 File.ReadAllText(getTempPath() + @"\data\case\casesArchive.json"));
         }
         public static IEnumerable<ReportData> reportsData()
@@ -283,9 +292,9 @@ namespace BMAutotests.AppLogic
             return JsonConvert.DeserializeObject<List<Expense>>(
                 File.ReadAllText(getTempPath() + @"\data\billing\expense.json"));
         }
-        public static IEnumerable<Case> casesNotArchive()
+        public static IEnumerable<Meeting> casesNotArchive()
         {
-            return JsonConvert.DeserializeObject<List<Case>>(
+            return JsonConvert.DeserializeObject<List<Meeting>>(
                 File.ReadAllText(getTempPath() + @"\data\case\casesNotArchive.json"));
         }
 
@@ -316,6 +325,6 @@ namespace BMAutotests.AppLogic
         {
             return JsonConvert.DeserializeObject<List<Invoice>>(
                 File.ReadAllText(getTempPath() + @"\data\billing\invoice.json"));
-        }
+        }*/
     }
 }

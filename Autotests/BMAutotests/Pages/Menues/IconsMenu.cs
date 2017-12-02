@@ -6,7 +6,7 @@ using System;
 
 namespace BMAutotests.Menues
 {
-    public class IconsMenu : ExternalMenu
+    public class IconsMenu : BaseMenu
     {
         [FindsBy(How = How.ClassName, Using = "b-floating_button-icon_list")]
         private IWebElement Menu;

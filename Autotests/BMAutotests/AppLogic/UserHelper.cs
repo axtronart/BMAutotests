@@ -43,6 +43,10 @@ namespace BMAutotests.AppLogic
         {
             return getUserByRole("Администратор");
         }
+        public User getSecretary()
+        {
+            return getUserByRole("Секретарь");
+        }
         public User getReportDataUser()
         {
             return getUserByRole("Данные в отчетах");
@@ -65,22 +69,29 @@ namespace BMAutotests.AppLogic
             //завершение работы всех запущенных браузеров
             WebDriverFactory.DismissAll();
         }
+        /*
         public void clickMenu(string text)
         {
             pages.extMenu.ensurePageLoaded();
             pages.extMenu.ClickByText(text);
+        }*/
+        public void clickMenu(int number)
+        {
+            waitsecond();
+            pages.mainMenu.ensurePageLoaded();
+            pages.mainMenu.ClickByIndex(number);
         }
         public void clickAdminMenu(string text)
         {
             pages.adminMenu.ensurePageLoaded();
             pages.adminMenu.ClickByText(text);
         }
-
+        /*
         public void returnToMainMenu()
         {
             pages.extMenu.ensurePageLoaded();
             pages.extMenu.clickByMainMenu();
-        }
+        }*/
         public string getURL()
         {
             return pages.driver.Url;
@@ -540,5 +551,7 @@ namespace BMAutotests.AppLogic
             
             return referenceNumber;
         }
+
+       
     }
 }
