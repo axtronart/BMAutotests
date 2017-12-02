@@ -34,14 +34,20 @@ namespace BMAutotests.AppLogic
             pages.popupPage.saveClick();
         }
 
-        public bool compareMeeting(Meeting meeting, Meeting testMeeting)
+        public bool compareMeeting(Meeting M1, Meeting M2)
         {
-            throw new NotImplementedException();
+            UserHelper.WriteToConsole(M1, M2);
+            return M1.Type == M2.Type &&
+                M1.Number == M2.Number;
         }
 
         public Meeting getMeeting()
         {
-            throw new NotImplementedException();
+            Meeting tempMeeting = new Meeting();
+            pages.meetingPage.ensurePageLoaded();
+            tempMeeting.Number = pages.meetingPage.getNumber();
+            tempMeeting.Type = pages.meetingPage.getType();
+            return tempMeeting;
         }
 
         public void deleteMeeting()

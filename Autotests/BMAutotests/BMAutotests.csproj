@@ -107,6 +107,7 @@
     <Compile Include="Pages\EmailsPage.cs" />
     <Compile Include="Model\Task.cs" />
     <Compile Include="Pages\Login\RemindPasswordPage.cs" />
+    <Compile Include="Pages\Meetings\MeetingPage.cs" />
     <Compile Include="Pages\Meetings\MeetingsPage.cs" />
     <Compile Include="Pages\Meetings\MeetingPopup.cs" />
     <Compile Include="Pages\Menues\IconsMenu.cs" />

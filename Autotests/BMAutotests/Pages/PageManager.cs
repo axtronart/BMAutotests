@@ -42,6 +42,7 @@ namespace BMAutotests.Pages
             meetingsPage = InitElements(new MeetingsPage(this));
             meetingPopup = InitElements(new MeetingPopup(this));
             loginPage = InitElements(new LoginPage(this));
+            meetingPage = InitElements(new MeetingPage(this));
 
             contextMenu = InitElements(new ContextMenu(this));
             headerMenu = InitElements(new HeaderMenu(this));
@@ -68,6 +69,7 @@ namespace BMAutotests.Pages
         public MainMenu mainMenu { get; set; }
         public MeetingsPage meetingsPage { get; set; }
         public MeetingPopup meetingPopup { get; set; }
+        public MeetingPage meetingPage { get; set; }
         public AdminMenu adminMenu { get; set; }
         public MiddleMenu middleMenu { get; set; }
         public LoginPage loginPage { get; set; }

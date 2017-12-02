@@ -22,9 +22,10 @@ namespace BMTests
         {
             //добавление нового заседания
             app.meetingHelper.createMeeting(meeting);
-/*
+            app.userHelper.waitClosedPopup();
+
             Meeting testMeeting = app.meetingHelper.getMeeting();
-            Assert.IsTrue(app.meetingHelper.compareMeeting(meeting, testMeeting));*/
+            Assert.IsTrue(app.meetingHelper.compareMeeting(meeting, testMeeting));
         }
 
 
