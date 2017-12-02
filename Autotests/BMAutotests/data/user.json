@@ -1,0 +1,17 @@
+﻿[
+    {
+        "login": "demo-admin",
+        "password": "qqq111",
+        "role": "Администратор"
+    },
+    {
+        "login": "cbd",
+        "password": "qqq111",
+        "role": "Участник КО"
+    },
+    {
+        "login": "ceo",
+        "password": "qqq111",
+        "role": "Участник КО"
+    }
+]

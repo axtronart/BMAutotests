@@ -1,0 +1,26 @@
+﻿[
+    {
+        "Name": "Имя",
+        "Patronimic": "Отчество",
+        "LastName": "Фамилия",
+        "Initials": "АА",
+        "Company": "Право.ру",
+        "Position": "Должность",
+        "Site": "ya.ru",
+        "Email": "testkeepteam3@yandex.ru",
+        "Phone": "21",
+        "Rate": "1",
+        "Department": "Адыгейский филиал",
+        "Timezone": "(UTC+03:00) Волгоград, Москва, Санкт-Петербург (RTZ 2)"
+    },
+    {
+        "Name": "ещеИмя",
+        "LastName": "ЕщеФамилия",
+        "Initials": "ББ",
+        "Company": "ЕщеПраво.ру",
+        "Position": "ЕщеДолжность",
+        "Email": "testkeepteam3@yandex.ru",
+        "Department": "Алтайский филиал",
+        "Timezone": "(UTC+03:00) Волгоград, Москва, Санкт-Петербург (RTZ 2)"
+    }
+]

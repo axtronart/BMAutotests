@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{589301BA-77E0-482F-8A63-566B8A6222BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BMAutotests</RootNamespace>
+    <AssemblyName>BMAutotests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="LumiSoft.Net">
+      <HintPath>..\..\packages\LumiSoft.Net.dll.4.5.5702.26503\lib\net45\Release\LumiSoft.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+    <Reference Include="WebDriver, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Selenium.WebDriver.2.53.1\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Selenium.Support.2.53.1\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppLogic\AppManager.cs" />
+    <Compile Include="AppLogic\EmailHelper.cs" />
+    <Compile Include="AppLogic\FileHelper.cs" />
+    <Compile Include="AppLogic\UserHelper.cs" />
+    <Compile Include="Model\Activity.cs" />
+    <Compile Include="Model\Billing\Inovice.cs" />
+    <Compile Include="Model\Billing\PaymentRecord.cs" />
+    <Compile Include="Model\Billing\Expense.cs" />
+    <Compile Include="Model\EmailMessage.cs" />
+    <Compile Include="Model\Case.cs" />
+    <Compile Include="Model\Automation.cs" />
+    <Compile Include="Model\Participants\Participant.cs" />
+    <Compile Include="Model\Profile.cs" />
+    <Compile Include="Model\DataBlock.cs" />
+    <Compile Include="Model\Dictionary.cs" />
+    <Compile Include="Model\Noty.cs" />
+    <Compile Include="Model\Events\EntityInlist.cs" />
+    <Compile Include="Model\Participants\SearchString.cs" />
+    <Compile Include="Model\ReportData.cs" />
+    <Compile Include="Model\Report.cs" />
+    <Compile Include="Model\Events\Event.cs" />
+    <Compile Include="Model\Filter.cs" />
+    <Compile Include="Model\Document.cs" />
+    <Compile Include="Model\Participants\Organization.cs" />
+    <Compile Include="Model\Participants\Individual.cs" />
+    <Compile Include="Model\Project.cs" />
+    <Compile Include="Model\HistoryRecord.cs" />
+    <Compile Include="Pages\EmailsPage.cs" />
+    <Compile Include="Model\Task.cs" />
+    <Compile Include="Pages\Login\RemindPasswordPage.cs" />
+    <Compile Include="Pages\Menues\IconsMenu.cs" />
+    <Compile Include="Pages\Menues\MiddleMenu.cs" />
+    <Compile Include="Pages\Menues\BaseMenu.cs" />
+    <Compile Include="Pages\Menues\AdminMenu.cs" />
+    <Compile Include="Pages\Menues\HeaderMenu.cs" />
+    <Compile Include="Pages\Menues\ExternalMenu.cs" />
+    <Compile Include="Model\Decision.cs" />
+    <Compile Include="Model\Menu.cs" />
+    <Compile Include="Model\SimpleString.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Pages\Login\LoginPage.cs" />
+    <Compile Include="Pages\CommonPage.cs" />
+    <Compile Include="Pages\Page.cs" />
+    <Compile Include="Pages\PageManager.cs" />
+    <Compile Include="Pages\Menues\ContextMenu.cs" />
+    <Compile Include="Pages\Profile\BottomMenuPage.cs" />
+    <Compile Include="Pages\Profile\ProfilePage.cs" />
+    <Compile Include="Pages\TablePage.cs" />
+    <Compile Include="Pages\PopupPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppLogic\WebDriverFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\email\welcomeemails.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\email\emails.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\login\loginincorrect.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\profile\currentpasswordincorrect.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\profile\passwordincorrect.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\profile\profile.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\user.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AutoItX3Lib">
+      <Guid>{F8937E53-D444-4E71-9275-35B64210CC3B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

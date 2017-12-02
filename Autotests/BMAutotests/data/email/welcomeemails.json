@@ -1,0 +1,14 @@
+﻿[
+    {
+        "folder": "INBOX|Welcome",
+        "from": "\"Casepro\" <casepro@casepro.ru>",
+        "to": "testcasepro1@yandex.ru",
+        "subject": "Добро пожаловать в ��истему CASE.PRO",
+        "contextTitle": "Добро пожаловать в CASE.PRO",
+        "contextMaintext": "Вам предоставлен доступ к сервису управления юридическими делами CASE.PRO. Перед началом использования сервиса, пожалуйста, установите пароль. Для этого нажмите кнопку ниже:",
+        "contextFooter": "Вашлогин:testcasepro1@yandex.ru",
+        "bestregards": "Выполучилиэтописьмо,таккакявляетесьпользователемCASE.PRO.",
+        "links": [ "http://autotest.test.case.one", "http://autotest.test.case.one", "http://autotest.test.case.one/#" ],
+        "type": "New"
+    }
+]
